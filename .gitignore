@@ -1,0 +1,4 @@
+*.log
+
+# Packages manager
+node_modules

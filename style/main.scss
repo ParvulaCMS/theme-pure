@@ -1,0 +1,165 @@
+//
+// PURE THEME
+//
+
+@import '_normalize';
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #ccc;
+	margin: 25px 0;
+}
+
+ul {
+	list-style-type: square;
+}
+
+table {
+	border-collapse: collapse;
+
+	td, th {
+		text-align: left;
+		padding: 5px 15px;
+		border-bottom: 1px solid #ccc;
+	}
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: 'Poppins', sans-serif;
+
+	.main {
+		padding: 0 1em;
+		color: #333;
+		font-size: 14px;
+
+		a {
+			color: #777;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		.features {
+			padding: 0;
+			margin: 0;
+			margin-bottom: 1rem;
+
+			ul {
+				margin: 0;
+				padding: 0;
+
+				&:after {
+					content: "";
+					display: table;
+					clear: both;
+				}
+
+				li {
+					list-style: none;
+					float: left;
+				}
+			}
+		}
+	}
+}
+
+.site-header {
+	text-align: center;
+	margin: 2rem 0;
+	margin-top: 4rem;
+
+	h1 {
+		color: #333;
+		font-size: 36pt;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+	}
+
+	.navbar {
+		display: inline-block;
+		font-family: 'Poppins', sans-serif;
+		// font-family: 'Open Sans', sans-serif;
+		font-size: 11pt;
+		font-weight: normal;
+		// background: #aaa;
+
+		ul {
+			padding: 0;
+
+			li {
+				letter-spacing: 1px;
+				margin: 0 2px;
+				display: inline;
+
+				&.active a {
+					color: #444;
+				}
+
+				a {
+					color: #888;
+					padding: 4px 5px;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.site-footer {
+	padding-top: 5rem;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+	font-size: 10pt;
+	color: #888;
+	letter-spacing: 0.8px;
+	padding: 2rem;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.container {
+
+		.main {
+			padding: 1em 2em;
+
+			.features {
+				ul li {
+					padding: 20px;
+					width: 33.3%;
+
+					&:nth-child(3n+1) {
+						padding-left: 0;
+					}
+
+					&:nth-child(3n+3) {
+						padding-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.main {
+		padding: 2em 4em;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

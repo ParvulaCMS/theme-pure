@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+	<?= $this->fetch('includes::head') ?>
+
+	<body class="<?= $page->get('layout') ?>">
+		<div class="container">
+			<?= $this->fetch('includes::header') ?>
+
+			<div class="main">
+				<?= $this->section('content', $content) ?>
+			</div>
+
+			<?= $this->fetch('includes::footer') ?>
+		</div>
+		<?= isset($site->dev) ? $this->fetch('includes::_dev') : '' ?>
+	</body>
+</html>

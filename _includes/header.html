@@ -1,0 +1,13 @@
+<header class="site-header">
+  <h1><?= $site->title ?></h1>
+
+  <nav class="navbar" role="navigation">
+    <ul>
+      <?php foreach ($pages() as $myPage) : ?>
+        <li class="<?= !$page->is($myPage) ?: 'active' ?>">
+          <a href="<?= $baseUrl . $myPage->slug ?>"><?= $myPage->title ?></a>
+        </li>
+      <?php endforeach; ?>
+    </ul>
+  </nav>
+</header>
